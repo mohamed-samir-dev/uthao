@@ -5,7 +5,7 @@ export const SHIPPING_STEPS: Step[] = [
     id: 1,
     title: "Book Shipment",
     description: "Easily place your order with a smooth, secure process designed for speed and convenience",
-    image: "./10.webp",
+    image: "/10.webp",
     alt: "Book Shipment"
   },
   {

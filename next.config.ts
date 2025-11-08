@@ -21,8 +21,7 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 31536000, // 1 year
   },
   
-  // Bundle optimization
-  swcMinify: true,
+
   
   // Generate sitemap
   async rewrites() {
