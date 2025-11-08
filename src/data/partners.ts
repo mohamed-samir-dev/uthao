@@ -1,0 +1,17 @@
+export const partnersData = [
+  "/adidas.webp",
+  "/nike.webp",
+  "/amazon.webp",
+  "/applewebp.webp",
+  "/Huawi.webp",
+  "/samsong.webp",
+  "/microsoft.webp",
+  "/intel.webp",
+  "/bmw.webp",
+  "/Tesla.webp",
+  "/Decathlon.webp",
+  "/ford.webp",
+  "/Johnson.webp",
+  "/ocacola.webp",
+  "/sabic.webp",
+];
