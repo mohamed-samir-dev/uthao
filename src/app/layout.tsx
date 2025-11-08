@@ -7,21 +7,28 @@ import "./globals.css";
 // import { Footer } from '@/components/layout/Footer';
 import { APP_CONFIG } from "@/constants";
 import { AuthProvider } from "@/components/providers/SessionProvider";
+import { WebVitals } from "@/components/performance/WebVitals";
 
-// Font configurations for the application
+// Optimized font configurations for better performance
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: 'swap',
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: 'swap',
+  preload: false,
 });
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
+  display: 'swap',
+  preload: false,
 });
 
 // SEO metadata configuration
@@ -93,6 +100,8 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/android-chrome-192x192.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
+        <link rel="preload" href="/1.webp" as="image" type="image/webp" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -130,13 +139,15 @@ export default function RootLayout({
           }}
         />
       </head>
-      {/* Body with font variables and flex layout */}
+      {/* Optimized body with font variables and flex layout */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfairDisplay.variable} antialiased min-h-screen flex flex-col font-sans`}
         suppressHydrationWarning
       >
         {/* Authentication context provider */}
         <AuthProvider>
+          {/* Performance monitoring */}
+          <WebVitals />
           {/* Global header (currently disabled) */}
           {/* <Header /> */}
           {/* Main content area */}
