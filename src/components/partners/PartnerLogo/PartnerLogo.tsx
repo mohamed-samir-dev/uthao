@@ -22,9 +22,9 @@ export const PartnerLogo = ({ src, index }: PartnerLogoProps) => {
       <Image
         src={src}
         alt="Partner logo"
-        width={80}
-        height={32}
-        className="h-4 sm:h-5 md:h-6 w-auto"
+        width={120}
+        height={48}
+        className="h-6 sm:h-7 md:h-8 w-auto"
       />
     </motion.div>
   )

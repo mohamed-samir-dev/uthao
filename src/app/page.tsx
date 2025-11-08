@@ -1,16 +1,13 @@
 // Component imports for home page
-import { lazy, Suspense } from 'react';
 import { Header } from "@/components/layout/Header/Header";
+import Partner from "@/components/layout/Partner/Partner";
+import { Services } from "@/components/services";
 import { Metadata } from "next";
-
-// Lazy load heavy components to improve initial load
-const Partner = lazy(() => import("@/components/layout/Partner/Partner"));
-const Services = lazy(() => import("@/components/services").then(mod => ({ default: mod.Services })));
-const Benefits = lazy(() => import("@/components/Benefits"));
-const Steps = lazy(() => import("@/components/Steps"));
-const Stories = lazy(() => import("@/components/Stories"));
-const FAQ = lazy(() => import("@/components/FAQ"));
-const Footer = lazy(() => import("@/components/Footer"));
+import Benefits from "@/components/Benefits";
+import Steps from "@/components/Steps";
+import Stories from "@/components/Stories";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 // SEO metadata for home page
 export const metadata: Metadata = {
   title: "Global Ocean Logistics & Shipping Solutions | Uthao",
@@ -29,14 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-// Loading component for better UX
-const SectionLoader = () => (
-  <div className="flex justify-center items-center py-16">
-    <div className="animate-pulse bg-gray-200 h-32 w-full max-w-md rounded-lg"></div>
-  </div>
-);
-
-// Home page component with optimized loading
+// Home page component with main sections
 export default function Home() {
   return (
     <>
@@ -65,39 +55,24 @@ export default function Home() {
         }}
       />
       <div className="space-y-8">
-        {/* Main content section with optimized loading */}
+        {/* Main content section with centered layout */}
         <section className="text-center space-y-4">
-          {/* Critical above-the-fold content */}
+          {/* Navigation header */}
           <Header />
-          
-          {/* Lazy loaded sections */}
-          <Suspense fallback={<SectionLoader />}>
-            <Partner />
-          </Suspense>
-          
-          <Suspense fallback={<SectionLoader />}>
-            <Services />
-          </Suspense>
-          
-          <Suspense fallback={<SectionLoader />}>
-            <Steps />
-          </Suspense>
-          
-          <Suspense fallback={<SectionLoader />}>
-            <Benefits />
-          </Suspense>
-          
-          <Suspense fallback={<SectionLoader />}>
-            <Stories />
-          </Suspense>
-          
-          <Suspense fallback={<SectionLoader />}>
-            <FAQ />
-          </Suspense>
-          
-          <Suspense fallback={<SectionLoader />}>
-            <Footer />
-          </Suspense>
+          {/* Partner logos section */}
+          <Partner />
+          {/* Services showcase */}
+          <Services />
+          {/* <StepsPage /> */}
+          <Steps />
+          {/* <BenefitsPage /> */}
+          <Benefits />
+          {/* <StoriesPage /> */}
+          <Stories />
+          {/* <FAQPage /> */}
+          <FAQ />
+          {/* <FooterPage /> */}
+          <Footer />
         </section>
       </div>
     </>
