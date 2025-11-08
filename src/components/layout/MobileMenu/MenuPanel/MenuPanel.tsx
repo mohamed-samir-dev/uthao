@@ -1,10 +1,14 @@
 'use client'
 import { motion, AnimatePresence } from "framer-motion";
+import { X } from "lucide-react";
 import { ROUTES } from "@/constants";
 import { UserProfileMobile } from "../../../ui/UserProfileMobile";
 import { MenuItem } from "../MenuItem";
-import {MenuPanelProps}from '@/types'
 
+interface MenuPanelProps {
+  isMenuOpen: boolean;
+  onClose: () => void;
+}
 
 export function MenuPanel({ isMenuOpen, onClose }: MenuPanelProps) {
   const menuItems = [
@@ -19,14 +23,21 @@ export function MenuPanel({ isMenuOpen, onClose }: MenuPanelProps) {
     <AnimatePresence>
       {isMenuOpen && (
         <motion.div 
-          initial={{ x: '100%', opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ x: '100%', opacity: 0 }}
-          transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-          className="fixed top-19 right-1 w-64 bg-gradient-to-br from-slate-900/95 via-blue-900/90 to-teal-800/85 backdrop-blur-xl border-l border-white/10 shadow-2xl z-[99999] max-[820px]:block hidden rounded-bl-2xl"
+          initial={{ x: '100%' }}
+          animate={{ x: 0 }}
+          exit={{ x: '100%' }}
+          transition={{ type: 'tween', duration: 0.3, ease: 'easeInOut' }}
+          className="fixed top-0 right-0 h-full w-80 bg-gradient-to-b from-slate-900 to-slate-800 shadow-2xl z-[99999] max-[820px]:block hidden"
         >
-          <div className="p-4 pt-16">
-            <div className="space-y-2">
+          <div className="p-6">
+            <button 
+              onClick={onClose}
+              className="absolute top-4 right-4 p-2 hover:bg-white/10 rounded-full transition-colors"
+            >
+              <X size={24} className="text-white" />
+            </button>
+            
+            <div className="mt-16 space-y-6">
               {menuItems.map((item, index) => (
                 <MenuItem 
                   key={item.label}
@@ -36,14 +47,10 @@ export function MenuPanel({ isMenuOpen, onClose }: MenuPanelProps) {
                   onClick={onClose}
                 />
               ))}
-              <motion.div 
-                initial={{ x: 50, opacity: 0 }} 
-                animate={{ x: 0, opacity: 1 }} 
-                transition={{ delay: 0.7 }} 
-                className="pt-4"
-              >
+              
+              <div className="pt-6 border-t border-white/20">
                 <UserProfileMobile />
-              </motion.div>
+              </div>
             </div>
           </div>
         </motion.div>
