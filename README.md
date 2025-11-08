@@ -175,10 +175,8 @@ src/
 
 2. **Environment Variables**
    ```
-   GOOGLE_CLIENT_ID=your_production_client_id
-   GOOGLE_CLIENT_SECRET=your_production_client_secret
-   NEXTAUTH_URL=https://your-domain.com
-   NEXTAUTH_SECRET=your_production_secret
+   # No external authentication variables needed
+   # Local authentication uses localStorage
    ```
 
 ### Alternative Platforms
@@ -192,7 +190,7 @@ src/
 
 - **Content Security Policy** - XSS protection
 - **Security Headers** - OWASP recommended headers
-- **Authentication** - Secure OAuth implementation
+- **Authentication** - Secure local authentication
 - **Input Validation** - Form data sanitization
 - **HTTPS Enforcement** - Secure data transmission
 
