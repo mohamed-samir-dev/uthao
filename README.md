@@ -29,15 +29,24 @@ A modern, responsive web application for global ocean logistics and shipping sol
       <img src="./public/Screenshot 2025-11-09 000341.png" alt="Mobile View 2" width="200"/>
       <br/>
       <img src="./public/Screenshot 2025-11-09 000349.png" alt="Mobile View 3" width="200"/>
+<img src="./public/Screenshot 2025-11-09 001303.png
+" alt="Mobile View 3" width="200"/>
+
+<img src="./public/Screenshot 2025-11-09 001310.png" alt="Mobile View 3" width="200"/>
+
+<img src="./public/Screenshot 2025-11-09 001316.png" alt="Mobile View 3" width="200"/>
+
       <br/>
       <em>Responsive mobile interface optimized for all devices</em>
     </td>
+
   </tr>
 </table>
 
 ## ✨ Key Features
 
 ### 🚢 Core Services
+
 - **Ocean Contract Logistics** - Comprehensive freight forwarding services
 - **Real-time Shipment Tracking** - Monitor cargo worldwide with live updates
 - **Global Port Coverage** - Extensive network across major shipping routes
@@ -45,6 +54,7 @@ A modern, responsive web application for global ocean logistics and shipping sol
 - **Container Shipping** - Full and LCL container services
 
 ### 💻 Technical Features
+
 - **Responsive Design** - Optimized for desktop, tablet, and mobile
 - **Fast Performance** - Built with Next.js 15 and Turbopack for optimal speed
 - **SEO Optimized** - Complete meta tags, structured data, and sitemap
@@ -53,6 +63,7 @@ A modern, responsive web application for global ocean logistics and shipping sol
 - **Progressive Web App** - PWA capabilities with offline support
 
 ### 🎨 User Experience
+
 - **Interactive Forms** - Multi-step shipping quote calculator
 - **Partner Showcase** - Trusted global logistics partners
 - **Success Stories** - Client testimonials and case studies
@@ -62,21 +73,25 @@ A modern, responsive web application for global ocean logistics and shipping sol
 ## 🛠️ Tech Stack
 
 ### Frontend Framework
+
 - **Next.js 15.5.4** - React framework with App Router
 - **React 19.1.0** - Latest React with concurrent features
 - **TypeScript 5.x** - Type-safe development
 
 ### Styling & UI
+
 - **Tailwind CSS 4.x** - Utility-first CSS framework
 - **Framer Motion 12.x** - Production-ready motion library
 - **Lucide React** - Beautiful & consistent icons
 - **Custom Fonts** - Geist Sans, Geist Mono, Playfair Display
 
 ### Authentication & Security
+
 - **Local Authentication** - Email/password based authentication
 - **Security Headers** - XSS protection, content security
 
 ### Development Tools
+
 - **Turbopack** - Ultra-fast bundler for development
 - **ESLint 9** - Code linting and formatting
 - **Jest** - Unit testing framework
@@ -87,6 +102,7 @@ A modern, responsive web application for global ocean logistics and shipping sol
 ### Prerequisites
 
 Ensure you have the following installed:
+
 - **Node.js 18+** (LTS recommended)
 - **npm**, **yarn**, **pnpm**, or **bun**
 - **Git** for version control
@@ -94,12 +110,14 @@ Ensure you have the following installed:
 ### Installation
 
 1. **Clone the repository**
+
 ```bash
 git clone https://github.com/mohamed-samir-dev/uthao.git
 cd uthao
 ```
 
 2. **Install dependencies**
+
 ```bash
 npm install
 # or
@@ -110,9 +128,8 @@ pnpm install
 bun install
 ```
 
-
-
 4. **Start development server**
+
 ```bash
 npm run dev
 # or
@@ -124,7 +141,7 @@ bun dev
 ```
 
 5. **Open your browser**
-Navigate to [http://localhost:3000](http://localhost:3000)
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
 ## 📁 Project Architecture
 
@@ -167,20 +184,21 @@ src/
 
 ## 🔧 Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start development server with Turbopack |
-| `npm run build` | Build production application |
-| `npm run start` | Start production server |
-| `npm run lint` | Run ESLint code analysis |
-| `npm run test` | Execute Jest test suite |
-| `npm run test:watch` | Run tests in watch mode |
+| Command              | Description                             |
+| -------------------- | --------------------------------------- |
+| `npm run dev`        | Start development server with Turbopack |
+| `npm run build`      | Build production application            |
+| `npm run start`      | Start production server                 |
+| `npm run lint`       | Run ESLint code analysis                |
+| `npm run test`       | Execute Jest test suite                 |
+| `npm run test:watch` | Run tests in watch mode                 |
 
 ## 🌐 Deployment
 
 ### Vercel (Recommended)
 
 1. **Connect to Vercel**
+
    - Push code to GitHub
    - Import project in [Vercel Dashboard](https://vercel.com)
    - Configure environment variables
