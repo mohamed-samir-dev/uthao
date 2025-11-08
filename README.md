@@ -146,9 +146,6 @@ bun dev
 
 ```
 src/
-├── app/                    # Next.js App Router
-│   ├── api/               # API routes
-│   │   └── auth/          # NextAuth configuration
 │   ├── login/             # Authentication pages
 │   ├── page/              # Additional pages
 │   │   ├── services/      # Services showcase
@@ -199,7 +196,7 @@ src/
 1. **Connect to Vercel**
 
    - Push code to GitHub
-   - Import project in [Vercel Dashboard](https://vercel.com)
+   - Import project in [Vercel Dashboard](https://uthao-zeta.vercel.app/)
    - Configure environment variables
    - Deploy automatically
 
@@ -265,7 +262,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📞 Contact & Support
 
-- **Website**: [https://uthao-7o3c.vercel.app/](https://uthao-7o3c.vercel.app/)
+- **Website**: [https://uthao-7o3c.vercel.app/](https://uthao-zeta.vercel.app/)
 - **Email**: mohammedsamiermouawad@gmail.com
 - **LinkedIn**: [Mohammed Samier Mouawad](https://www.linkedin.com/in/mohammed-samier-mouawad/)
 - **Portfolio**: [Frontend Portfolio](https://my-frontend-portfolio-five.vercel.app/)
