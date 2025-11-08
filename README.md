@@ -30,8 +30,7 @@ A modern, responsive web application for global ocean logistics and shipping sol
       <br/>
       <img src="./public/Screenshot 2025-11-09 000349.png" alt="Mobile View 3" width="200"/>
             <br/>
-<img src="./public/Screenshot 2025-11-09 001303.png
-" alt="Mobile View 3" width="200"/>
+<img src="./public/Screenshot 2025-11-09 001303.png" alt="Mobile View 3" width="200"/>
 <br/>
 <img src="./public/Screenshot 2025-11-09 001310.png" alt="Mobile View 3" width="200"/>
       <br/>
