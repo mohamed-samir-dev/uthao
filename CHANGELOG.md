@@ -103,10 +103,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 #### Performance Metrics
 - **Lighthouse Scores**
-  - Performance: 95+
+  - Performance: 97+
   - SEO: 100
-  - Accessibility: 98+
-  - Best Practices: 100
+  - Accessibility: 93+
+  - Best Practices: 96
 
 #### Browser Support
 - Chrome 90+
