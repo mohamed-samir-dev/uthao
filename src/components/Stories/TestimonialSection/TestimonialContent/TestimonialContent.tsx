@@ -15,7 +15,7 @@ const TestimonialContent = ({ onOpenModal }: TestimonialContentProps) => {
         &ldquo;Working with Uthao was an outstanding experience. Their expertise in ocean cargo services impressed us deeply. The team delivered results that exceeded our expectations.&rdquo;
       </p>
       <div className="pt-2 sm:pt-4">
-        <h4 className="text-lg sm:text-xl font-semibold text-white mb-1">Mohammed Samier</h4>
+        <h3 className="text-lg sm:text-xl font-semibold text-white mb-1">Mohammed Samier</h3>
         <p className="text-gray-400 text-sm mb-4 sm:mb-6">Developer of this site</p>
         <button 
           onClick={onOpenModal}
