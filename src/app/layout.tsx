@@ -7,6 +7,7 @@ import "./globals.css";
 // import { Footer } from '@/components/layout/Footer';
 import { APP_CONFIG } from "@/constants";
 import { AuthProvider } from "@/components/providers/SessionProvider";
+import { PerformanceMonitor } from "@/components/seo/PerformanceMonitor";
 
 // Font configurations for the application
 const geistSans = Geist({
@@ -137,6 +138,8 @@ export default function RootLayout({
       >
         {/* Authentication context provider */}
         <AuthProvider>
+          {/* Performance monitoring */}
+          <PerformanceMonitor />
           {/* Global header (currently disabled) */}
           {/* <Header /> */}
           {/* Main content area */}

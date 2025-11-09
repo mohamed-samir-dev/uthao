@@ -9,7 +9,9 @@
     "start": "next start",
     "lint": "eslint",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "optimize:images": "node scripts/optimize-images.js",
+    "perf:audit": "npm run build && npm run start"
   },
   "dependencies": {
     "clsx": "^2.1.0",
