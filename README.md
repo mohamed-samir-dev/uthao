@@ -6,7 +6,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.x-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com/)
 [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=flat-square&logo=vercel)](https://uthao-zeta.vercel.app/)
 
-A modern, responsive web application for global ocean logistics and shipping solutions. Navigate global trade with trusted ocean logistics, professional shipping services, real-time tracking, and reliable worldwide delivery solutions.
+A modern, responsive web application for global ocean logistics and shipping solutions. Navigate global trade with trusted ocean logistics, professional shipping services, real-time tracking,and reliable worldwide delivery solutions.
 
 ## 🌐 Live Demo
 
