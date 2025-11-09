@@ -1,8 +1,11 @@
 'use client'
 import { motion } from "framer-motion";
+import { lazy } from "react";
 import { Navigation } from "../Navigation/Navigation";
-import { MobileMenu } from "../MobileMenu";
-import { HeroSection } from "../HeroSection/HeroSection";
+
+// Lazy loaded components
+const MobileMenu = lazy(() => import("../MobileMenu").then(module => ({ default: module.MobileMenu })));
+const HeroSection = lazy(() => import("../HeroSection/HeroSection").then(module => ({ default: module.HeroSection })));
 
 /**
  * Header component with animated background and navigation

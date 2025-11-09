@@ -2,7 +2,10 @@
 import Link from "next/link";
 import { APP_CONFIG, ROUTES } from "@/constants";
 import { motion } from "framer-motion";
-import { UserProfileDesktop } from "../../ui/UserProfileDesktop";
+import { lazy } from "react";
+
+// Lazy loaded component
+const UserProfileDesktop = lazy(() => import("../../ui/UserProfileDesktop").then(module => ({ default: module.UserProfileDesktop })));
 
 /**
  * Desktop navigation with animated logo, menu items, and user profile

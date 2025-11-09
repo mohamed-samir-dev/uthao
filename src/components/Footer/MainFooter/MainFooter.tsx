@@ -1,7 +1,9 @@
 "use client";
-import { useState } from "react";
-import { ShippingModal } from "../../ui/ShippingModal";
-import FinalFooter from "@/components/Footer/FinalFooter/FinalFooter";
+import { useState, lazy } from "react";
+
+// Lazy loaded components
+const ShippingModal = lazy(() => import("../../ui/ShippingModal").then(module => ({ default: module.ShippingModal })));
+const FinalFooter = lazy(() => import("@/components/Footer/FinalFooter/FinalFooter"));
 const MainFooter = () => {
   const [showModal, setShowModal] = useState(false);
 

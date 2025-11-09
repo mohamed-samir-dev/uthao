@@ -1,13 +1,15 @@
 "use client";
-import { useState } from "react";
+import { useState, lazy } from "react";
 import { loginUser } from "@/lib/auth";
 import { useRouter } from "next/navigation";
-import { EmailInput } from "../../EmailInput";
-import { PasswordInput } from "../../PasswordInput";
-import { SubmitButton } from "../../SubmitButton";
-import { FormToggle } from "../../FormToggle";
 import { validateEmail, validatePassword } from "../../validation";
 import type { LoginFormProps } from '@/types';
+
+// Lazy loaded components
+const EmailInput = lazy(() => import("../../EmailInput").then(module => ({ default: module.EmailInput })));
+const PasswordInput = lazy(() => import("../../PasswordInput").then(module => ({ default: module.PasswordInput })));
+const SubmitButton = lazy(() => import("../../SubmitButton").then(module => ({ default: module.SubmitButton })));
+const FormToggle = lazy(() => import("../../FormToggle").then(module => ({ default: module.FormToggle })));
 
 export function LoginForm({ onToggleMode, onError }: LoginFormProps) {
   const [formData, setFormData] = useState({ email: "", password: "" });

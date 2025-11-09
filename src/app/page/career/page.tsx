@@ -2,9 +2,12 @@ import { Metadata } from "next";
 import { generateSEO } from "@/lib/seo";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import Footer from "@/components/Footer";
-import Benefits from "@/components/Benefits";
-import Stories from "@/components/Stories";
+import { lazy } from "react";
+
+// Lazy loaded components
+const Footer = lazy(() => import("@/components/Footer"));
+const Benefits = lazy(() => import("@/components/Benefits"));
+const Stories = lazy(() => import("@/components/Stories"));
 
 
 export const metadata: Metadata = generateSEO({

@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import Footer from "@/components/Footer";
-import Steps from "@/components/Steps";
+import { lazy } from "react";
+
+// Lazy loaded components
+const Footer = lazy(() => import("@/components/Footer"));
+const Steps = lazy(() => import("@/components/Steps"));
 
 export default function StepsPage() {
   return (

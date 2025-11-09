@@ -1,9 +1,12 @@
 import { Metadata } from "next";
 import { generateSEO } from "@/lib/seo";
-import Stories from "@/components/Stories";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import Footer from "@/components/Footer";
+import { lazy } from "react";
+
+// Lazy loaded components
+const Stories = lazy(() => import("@/components/Stories"));
+const Footer = lazy(() => import("@/components/Footer"));
 export const metadata: Metadata = generateSEO({
   title: "About Uthao | Leading Ocean Logistics Provider",
   description:

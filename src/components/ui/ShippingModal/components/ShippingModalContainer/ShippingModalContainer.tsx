@@ -1,10 +1,13 @@
 "use client";
-import { ModalBackdrop } from '../ModalBackdrop/ModalBackdrop';
-import { ModalContainer } from '../ModalContainer/ModalContainer';
-import { ShippingModalContent } from '../ShippingModalContent/ShippingModalContent';
-import { ShippingModalFooter } from '../ShippingModalFooter/ShippingModalFooter';
+import { lazy } from 'react';
 import { useShippingModal } from "../../hooks/useShippingModal";
 import { ShippingModalContainerProps } from "../../types";
+
+// Lazy loaded components
+const ModalBackdrop = lazy(() => import('../ModalBackdrop/ModalBackdrop').then(module => ({ default: module.ModalBackdrop })));
+const ModalContainer = lazy(() => import('../ModalContainer/ModalContainer').then(module => ({ default: module.ModalContainer })));
+const ShippingModalContent = lazy(() => import('../ShippingModalContent/ShippingModalContent').then(module => ({ default: module.ShippingModalContent })));
+const ShippingModalFooter = lazy(() => import('../ShippingModalFooter/ShippingModalFooter').then(module => ({ default: module.ShippingModalFooter })));
 
 export const ShippingModalContainer = ({
   isOpen,

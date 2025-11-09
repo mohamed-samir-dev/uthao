@@ -1,8 +1,11 @@
 import { Metadata } from "next";
-import Services from "@/components/services";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
-import Footer from "@/components/Footer";
+import { lazy } from "react";
+
+// Lazy loaded components
+const Services = lazy(() => import("@/components/services"));
+const Footer = lazy(() => import("@/components/Footer"));
 export const metadata: Metadata = {
   title: "Ocean Logistics Services | Global Shipping Solutions | Uthao",
   description:

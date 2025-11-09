@@ -1,9 +1,11 @@
 'use client'
 // Authentication and UI imports
 import { motion } from 'framer-motion'
-import { useState } from 'react'
-import { LoginForm } from '@/components/forms'
-import { SignUpForm } from '@/components/forms'
+import { useState, lazy } from 'react'
+
+// Lazy loaded components
+const LoginForm = lazy(() => import('@/components/forms').then(module => ({ default: module.LoginForm })));
+const SignUpForm = lazy(() => import('@/components/forms').then(module => ({ default: module.SignUpForm })));
 
 // Main login/signup page component
 export default function LoginPage() {

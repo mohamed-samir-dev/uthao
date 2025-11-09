@@ -1,6 +1,9 @@
 "use client";
-import StepCard from '../StepCard/component/StepCard';
+import { lazy } from 'react';
 import { SHIPPING_STEPS } from '../shared/data';
+
+// Lazy loaded component
+const StepCard = lazy(() => import('../StepCard/component/StepCard'));
 
 
 const Steps = () => {
