@@ -36,12 +36,14 @@ export function ScheduleForm({ formData, onInputChange, errors }: ScheduleFormPr
       <motion.div whileHover={{ scale: 1.02 }} className="relative">
         <Calendar className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/60 w-5 h-5" />
         <input
+          id="date"
           type="date"
           value={formData.date}
           onChange={(e) => onInputChange("date", e.target.value)}
           style={{ fontSize: "16px", height: "48px" }}
           className="w-full pl-12 pr-4 bg-white/10 border border-white/20 rounded-xl text-white focus:ring-2 focus:ring-white/40 focus:border-white/40 outline-none transition-all backdrop-blur-sm font-medium"
         />
+        <label htmlFor="date" className="sr-only">Choose date</label>
         {errors.date && <p className="text-red-400 text-sm mt-1">{errors.date}</p>}
       </motion.div>
     </motion.div>
