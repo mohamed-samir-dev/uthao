@@ -1,16 +1,13 @@
 // Component imports for home page
 import { Header } from "@/components/layout/Header/Header";
+import Partner from "@/components/layout/Partner/Partner";
+import { Services } from "@/components/services";
 import { Metadata } from "next";
-import { lazy } from "react";
-
-// Lazy loaded components
-const Partner = lazy(() => import("@/components/layout/Partner/Partner"));
-const Services = lazy(() => import("@/components/services").then(module => ({ default: module.Services })));
-const Benefits = lazy(() => import("@/components/Benefits"));
-const Steps = lazy(() => import("@/components/Steps"));
-const Stories = lazy(() => import("@/components/Stories"));
-const FAQ = lazy(() => import("@/components/FAQ"));
-const Footer = lazy(() => import("@/components/Footer"));
+import Benefits from "@/components/Benefits";
+import Steps from "@/components/Steps";
+import Stories from "@/components/Stories";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 // SEO metadata for home page
 export const metadata: Metadata = {
   title: "Global Ocean Logistics & Shipping Solutions | Uthao",

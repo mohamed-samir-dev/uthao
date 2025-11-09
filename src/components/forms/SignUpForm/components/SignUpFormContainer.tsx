@@ -1,12 +1,10 @@
 "use client";
-import { useState, lazy } from "react";
+import { useState } from "react";
 import { saveUser } from "@/lib/auth";
 import { useRouter } from "next/navigation";
 import { SignUpFormProps, SignUpFormData, SignUpFormErrors } from "@/types";
+import { SignUpFormContent } from "./SignUpFormContent";
 import { validateName, validateEmail, validateSignUpPassword, validateConfirmPassword } from "../../validation";
-
-// Lazy loaded component
-const SignUpFormContent = lazy(() => import("./SignUpFormContent").then(module => ({ default: module.SignUpFormContent })));
 
 export function SignUpFormContainer({ onToggleMode, onError }: SignUpFormProps) {
   const [formData, setFormData] = useState<SignUpFormData>({

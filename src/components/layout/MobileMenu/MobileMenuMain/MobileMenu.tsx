@@ -1,10 +1,8 @@
 'use client'
-import { useState, lazy } from "react";
-
-// Lazy loaded components
-const MenuToggle = lazy(() => import("../MenuToggle").then(module => ({ default: module.MenuToggle })));
-const MenuBackdrop = lazy(() => import("../MenuBackdrop").then(module => ({ default: module.MenuBackdrop })));
-const MenuPanel = lazy(() => import("../MenuPanel").then(module => ({ default: module.MenuPanel })));
+import { useState } from "react";
+import { MenuToggle } from "../MenuToggle";
+import { MenuBackdrop } from "../MenuBackdrop";
+import { MenuPanel } from "../MenuPanel";
 
 /**
  * Mobile navigation menu with slide-in animation and backdrop

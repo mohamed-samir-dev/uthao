@@ -1,13 +1,10 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { lazy } from 'react'
+import { PartnerTitle } from '../../partners/PartnerTitle/PartnerTitle'
+import { PartnerCarousel } from '../../partners/PartnerCarousel/PartnerCarousel/PartnerCarousel'
 import { partnersData } from '@/data/partners'
 import { useResponsive } from '@/hooks/useResponsive/useResponsive'
-
-// Lazy loaded components
-const PartnerTitle = lazy(() => import('../../partners/PartnerTitle/PartnerTitle').then(module => ({ default: module.PartnerTitle })));
-const PartnerCarousel = lazy(() => import('../../partners/PartnerCarousel/PartnerCarousel/PartnerCarousel').then(module => ({ default: module.PartnerCarousel })));
 
 /**
  * Partners section with animated title and responsive carousel

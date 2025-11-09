@@ -1,9 +1,6 @@
 'use client'
 import { motion } from "framer-motion";
-import { lazy } from "react";
-
-// Lazy loaded component
-const SearchForm = lazy(() => import("../../forms/SearchForm").then(module => ({ default: module.SearchForm })));
+import { SearchForm } from "../../forms/SearchForm";
 
 /**
  * Hero section with animated title and search form

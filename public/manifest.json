@@ -2,7 +2,7 @@
   "name": "Uthao - Global Ocean Logistics",
   "short_name": "Uthao",
   "description": "Navigate global trade with trusted ocean logistics and shipping solutions",
-  "start_url": "https://uthao-cwtk.vercel.app/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",

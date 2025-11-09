@@ -1,10 +1,8 @@
 "use client";
-import { useState, lazy } from "react";
-
-// Lazy loaded components
-const CaseStudyModal = lazy(() => import("../../CaseStudyModal/CaseStudyModal"));
-const TestimonialSection = lazy(() => import('../TestimonialSection').then(module => ({ default: module.TestimonialSection })));
-const StatsSection = lazy(() => import('../StatsSection/StatsSection'));
+import { useState } from "react";
+import CaseStudyModal from "../../CaseStudyModal/CaseStudyModal";
+import {TestimonialSection} from '../TestimonialSection';
+import StatsSection from '../StatsSection/StatsSection';
 
 const Stories = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);

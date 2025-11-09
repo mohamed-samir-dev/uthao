@@ -1,8 +1,5 @@
-import { lazy } from "react";
 import { BENEFITS } from "../data/benefits";
-
-// Lazy loaded component
-const BenefitCard = lazy(() => import("./BenefitCard"));
+import BenefitCard from "./BenefitCard";
 
 const Benefits = () => {
   return (

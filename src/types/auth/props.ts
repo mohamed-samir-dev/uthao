@@ -1,5 +1,5 @@
 
-import {User,Benefit } from "@/types";
+import { FormData, Pricing, TranslationFunction,User,Benefit } from "@/types";
 
 // Props for SignUpFormProps
 export interface SignUpFormProps {

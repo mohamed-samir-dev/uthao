@@ -1,8 +1,5 @@
-import { lazy } from 'react';
+import QuestionItem from './QuestionItem';
 import { QUESTIONS } from '../constants/data';
-
-// Lazy loaded component
-const QuestionItem = lazy(() => import('./QuestionItem'));
 
 const FAQ = () => {
   return (

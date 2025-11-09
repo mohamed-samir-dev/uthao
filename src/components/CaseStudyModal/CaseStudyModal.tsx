@@ -1,14 +1,8 @@
 "use client";
-import { lazy } from 'react';
 import { CaseStudyModalProps } from '@/types';
-
-// Lazy loaded components
-const ModalHeader = lazy(() => import('./Header/ModalHeader').then(module => ({ default: module.ModalHeader })));
-const MetricsGrid = lazy(() => import('./KeyMetrics/MetricsGrid').then(module => ({ default: module.MetricsGrid })));
-const ChallengeSection = lazy(() => import('./Content').then(module => ({ default: module.ChallengeSection })));
-const SolutionSection = lazy(() => import('./Content').then(module => ({ default: module.SolutionSection })));
-const ResultsSection = lazy(() => import('./Content').then(module => ({ default: module.ResultsSection })));
-const ClientQuote = lazy(() => import('./Content').then(module => ({ default: module.ClientQuote })));
+import { ModalHeader } from './Header/ModalHeader';
+import { MetricsGrid } from './KeyMetrics/MetricsGrid';
+import { ChallengeSection, SolutionSection, ResultsSection, ClientQuote } from './Content';
 
 const CaseStudyModal = ({ isOpen, onClose }: CaseStudyModalProps) => {
   if (!isOpen) return null;
