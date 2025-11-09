@@ -277,10 +277,10 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## 📈 Project Stats
 
-- **Performance Score**: 95+ (Lighthouse)
-- **SEO Score**: 100 (Lighthouse)
-- **Accessibility**: 98+ (Lighthouse)
+- **Performance Score**: 99 (Lighthouse)
+- **Accessibility Score**: 93 (Lighthouse)
 - **Best Practices**: 100 (Lighthouse)
+- **SEO Score**: 100 (Lighthouse)
 
 ---
 
