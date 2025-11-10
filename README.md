@@ -278,11 +278,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ## 📈 Project Stats
 
 - **Performance Score**: 99 (Lighthouse)
-- **Accessibility Score**: 93 (Lighthouse)
+- **Accessibility Score**: 100 (Lighthouse)
 - **Best Practices**: 100 (Lighthouse)
 - **SEO Score**: 100 (Lighthouse)
 
-**📊 [View Full Lighthouse Report](https://pagespeed.web.dev/analysis/https-uthao-zeta-vercel-app/hir9d3qz2q?hl=ar&form_factor=desktop)**
+**📊 [View Full Lighthouse Report](https://pagespeed.web.dev/analysis/https-uthao-zeta-vercel-app/j49xxcwltd?hl=ar&form_factor=desktop)**
 
 ---
 
