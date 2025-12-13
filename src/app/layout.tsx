@@ -8,21 +8,26 @@ import "./globals.css";
 import { APP_CONFIG } from "@/constants";
 import { AuthProvider } from "@/components/providers/SessionProvider";
 import { PerformanceMonitor } from "@/components/seo/PerformanceMonitor";
+import { LCPMonitor } from "@/components/seo/LCPMonitor";
 
-// Font configurations for the application
+// Font configurations with display swap for better LCP
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
+  display: "swap",
 });
 
 // SEO metadata configuration
@@ -85,6 +90,10 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Preload critical hero image */}
+        <link rel="preload" as="image" href="/1.webp" fetchPriority="high" />
+        {/* Preload critical fonts */}
+        <link rel="preload" href="/_next/static/media/geist-sans.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="icon" href="/android-chrome-192x192.png" sizes="any" />
         <link
           rel="icon"
@@ -94,8 +103,10 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/android-chrome-192x192.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#000000" />
+        {/* Defer non-critical JSON-LD */}
         <script
           type="application/ld+json"
+          defer
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
@@ -115,7 +126,6 @@ export default function RootLayout({
                 "https://www.linkedin.com/in/mohammed-samier-mouawad/",
                 "https://x.com/Mouawad18804",
               ],
-
               service: {
                 "@type": "Service",
                 name: "Ocean Logistics Services",
@@ -140,6 +150,7 @@ export default function RootLayout({
         <AuthProvider>
           {/* Performance monitoring */}
           <PerformanceMonitor />
+          <LCPMonitor />
           {/* Global header (currently disabled) */}
           {/* <Header /> */}
           {/* Main content area */}
