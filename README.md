@@ -14,34 +14,6 @@ A modern, responsive web application for global ocean logistics and shipping sol
 
 ## 📸 Screenshots
 
-<table>
-  <tr>
-    <td align="center">
-      <h3>🖥️ Desktop View</h3>
-      <img src="./public/screencapture-desktop.webp" alt="Desktop Homepage" width="400"/>
-      <br/>
-      <em>Homepage showcasing our comprehensive logistics solutions with modern UI design</em>
-    </td>
-    <td align="center">
-      <h3>📱 Mobile View</h3>
-      <img src="./public/Screenshot Mobile.png" alt="Mobile Homepage" width="200"/>
-      <br/>
-      <img src="./public/Screenshot 2025-11-09 000341.png" alt="Mobile View 2" width="200"/>
-      <br/>
-      <img src="./public/Screenshot 2025-11-09 000349.png" alt="Mobile View 3" width="200"/>
-            <br/>
-<img src="./public/Screenshot 2025-11-09 001303.png" alt="Mobile View 3" width="200"/>
-<br/>
-<img src="./public/Screenshot 2025-11-09 001310.png" alt="Mobile View 3" width="200"/>
-      <br/>
-<img src="./public/Screenshot 2025-11-09 001316.png" alt="Mobile View 3" width="200"/>
-     <br/>
-      <em>Responsive mobile interface optimized for all devices</em>
-    </td>
-
-  </tr>
-</table>
-
 ## ✨ Key Features
 
 ### 🚢 Core Services
