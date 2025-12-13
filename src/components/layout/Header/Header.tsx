@@ -1,5 +1,6 @@
 'use client'
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Navigation } from "../Navigation/Navigation";
 import { MobileMenu } from "../MobileMenu";
 import { HeroSection } from "../HeroSection/HeroSection";
@@ -15,9 +16,20 @@ export function Header() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8 }}
-      style={{ backgroundImage: "url('/1.webp')" }}
-      className="relative min-h-screen bg-gradient-to-br from-blue-900/80 via-blue-800/70 to-teal-700/60 bg-cover bg-center bg-no-repeat bg-blend-soft-light"
+      className="relative min-h-screen overflow-hidden"
     >
+      {/* Hero background image with highest priority */}
+      <Image
+        src="/1.webp"
+        alt="Global ocean logistics cargo ship"
+        fill
+        priority
+        quality={85}
+        sizes="100vw"
+        className="object-cover object-center"
+      />
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-blue-800/70 to-teal-700/60" />
       {/* Navigation bar with slide-down animation */}
       <motion.nav 
         initial={{ y: -100, opacity: 0 }}
@@ -32,13 +44,7 @@ export function Header() {
       {/* Main hero content */}
       <HeroSection />
 
-      {/* Bottom gradient overlay for better text readability */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
-        className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent pointer-events-none"
-      />
+
     </motion.header>
   );
 }
