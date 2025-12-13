@@ -1,5 +1,5 @@
 // Component imports for home page
-import { Header } from "@/components/layout/Header/Header";
+import { OptimizedHeader } from "@/components/layout/Header/OptimizedHeader";
 import Partner from "@/components/layout/Partner/Partner";
 import { Services } from "@/components/services";
 import { Metadata } from "next";
@@ -32,6 +32,7 @@ export default function Home() {
     <>
       <script
         type="application/ld+json"
+        defer
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
@@ -57,8 +58,8 @@ export default function Home() {
       <div className="space-y-8">
         {/* Main content section with centered layout */}
         <section className="text-center space-y-4">
-          {/* Navigation header */}
-          <Header />
+          {/* Optimized navigation header */}
+          <OptimizedHeader />
           {/* Partner logos section */}
           <Partner />
           {/* Services showcase */}
