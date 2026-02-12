@@ -20,7 +20,7 @@ export const ROUTES = {
   HOME: "/",
   Services: "#services",
   Process: "#process",
-  Benefits: "#career",
+  Career: "#career",
   Stories: "#stories",
   LOGIN: "/login",
   login: "/login", 

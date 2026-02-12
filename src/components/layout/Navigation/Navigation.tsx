@@ -41,7 +41,7 @@ export function Navigation() {
             { href: ROUTES.HOME, label: 'Home' },
             { href: ROUTES.Services, label: 'Services' },
             { href: ROUTES.Process, label: 'Process' },
-            { href: ROUTES.Benefits, label: 'Benefits' },
+            { href: ROUTES.Career, label: 'Career' },
             { href: ROUTES.Stories, label: 'Stories' }
           ].map((item, index) => (
             <motion.li key={item.label} initial={{ y: -20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.5 + index * 0.1 }}>
