@@ -92,8 +92,6 @@ export default function RootLayout({
       <head>
         {/* Preload critical hero image */}
         <link rel="preload" as="image" href="/1.webp" fetchPriority="high" />
-        {/* Preload critical fonts */}
-        <link rel="preload" href="/_next/static/media/geist-sans.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="icon" href="/android-chrome-192x192.png" sizes="any" />
         <link
           rel="icon"
