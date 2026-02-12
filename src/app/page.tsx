@@ -4,14 +4,14 @@ import Partner from "@/components/layout/Partner/Partner";
 import { Services } from "@/components/services";
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 
 // Lazy load below-the-fold components
-const Benefits = dynamic(() => import("@/components/Benefits"), { ssr: true });
-const Steps = dynamic(() => import("@/components/Steps"), { ssr: true });
-const Stories = dynamic(() => import("@/components/Stories"), { ssr: true });
-const FAQ = dynamic(() => import("@/components/FAQ"), { ssr: true });
-const Footer = dynamic(() => import("@/components/Footer"), { ssr: true });
-const ScrollToTop = dynamic(() => import("@/components/ui/ScrollToTop").then(mod => ({ default: mod.ScrollToTop })), { ssr: false });
+const Benefits = dynamic(() => import("@/components/Benefits"));
+const Steps = dynamic(() => import("@/components/Steps"));
+const Stories = dynamic(() => import("@/components/Stories"));
+const FAQ = dynamic(() => import("@/components/FAQ"));
+const Footer = dynamic(() => import("@/components/Footer"));
 // SEO metadata for home page
 export const metadata: Metadata = {
   title: "Global Ocean Logistics & Shipping Solutions | Uthao",
