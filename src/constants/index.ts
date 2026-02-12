@@ -19,7 +19,7 @@ export const API_ROUTES = {
 export const ROUTES = {
   HOME: "/",
   Services: "#services",
-  Steps: "#process",
+  Process: "#process",
   Benefits: "#career",
   Stories: "#stories",
   LOGIN: "/login",

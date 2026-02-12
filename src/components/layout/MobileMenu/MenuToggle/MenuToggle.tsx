@@ -12,6 +12,7 @@ export function MenuToggle({ isMenuOpen, onClick }: MenuToggleProps) {
       onClick={onClick}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}
+      aria-label={isMenuOpen ? "Close menu" : "Open menu"}
       className="max-[820px]:flex hidden z-10 flex-col justify-center items-center w-10 h-10 bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300"
     >
       <motion.span
