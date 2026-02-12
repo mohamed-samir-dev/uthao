@@ -1,6 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Button from "@/components/ui/Button/Button";
+
+const MotionImage = motion.create(Image);
 
 const Services1 = () => {
   return (
@@ -28,25 +31,37 @@ const Services1 = () => {
 
           <div className="relative">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <motion.img
+              <MotionImage
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
                 src="/2.webp"
                 alt="Ocean logistics service"
+                width={640}
+                height={256}
+                quality={70}
+                sizes="(max-width: 640px) 100vw, 640px"
                 className="rounded-2xl shadow-lg sm:col-span-2 w-full h-48 sm:h-64 object-cover"
               />
-              <motion.img
+              <MotionImage
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
                 src="/3.webp"
                 alt="Global shipping network"
+                width={320}
+                height={192}
+                quality={70}
+                sizes="(max-width: 640px) 100vw, 320px"
                 className="rounded-2xl shadow-lg w-full h-40 sm:h-48 object-cover"
               />
-              <motion.img
+              <MotionImage
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
                 src="/4.webp"
                 alt="Real-time tracking portal"
+                width={320}
+                height={192}
+                quality={70}
+                sizes="(max-width: 640px) 100vw, 320px"
                 className="rounded-2xl shadow-lg w-full h-40 sm:h-48 object-cover"
               />
             </div>

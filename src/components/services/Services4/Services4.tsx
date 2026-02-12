@@ -35,10 +35,12 @@ const Services4 = () => {
             <Image
               src="/8.webp"
               alt="Sustainable container loading with eco-friendly logistics solutions"
-              width={600}
+              width={637}
               height={400}
+              quality={65}
+              sizes="(max-width: 1024px) 100vw, 637px"
+              loading="lazy"
               className="w-full h-[300px] sm:h-[350px] lg:h-[400px] object-cover rounded-xl"
-              priority
             />
           </div>
           <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-lg">

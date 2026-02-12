@@ -11,6 +11,9 @@ const Services2 = () => {
           alt="Ocean Services"
           width={1200}
           height={400}
+          quality={65}
+          sizes="100vw"
+          loading="lazy"
           className="w-full h-[300px] sm:h-[500px] lg:h-[600px] object-cover mt-10"
         />
       </div>
@@ -61,8 +64,11 @@ const Services2 = () => {
             <Image
               src="/6.webp"
               alt="Container Loading"
-              width={500}
+              width={665}
               height={350}
+              quality={65}
+              sizes="(max-width: 1024px) 100vw, 665px"
+              loading="lazy"
               className="w-full h-[250px] sm:h-[300px] lg:h-[350px] object-cover rounded-lg"
             />
           </div>

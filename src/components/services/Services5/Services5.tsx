@@ -13,10 +13,12 @@ const Services5 = () => {
               <Image
                 src="/9.webp"
                 alt="Full Container Load - Professional shipping services"
-                width={600}
+                width={637}
                 height={400}
+                quality={65}
+                sizes="(max-width: 1024px) 100vw, 637px"
+                loading="lazy"
                 className="w-full h-[150px] sm:h-[400px] lg:h-[400px] object-cover rounded-2xl shadow-2xl"
-                priority
               />
             </div>
           </div>
