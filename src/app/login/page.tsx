@@ -21,6 +21,9 @@ export default function LoginPage() {
         animate={{ opacity: 1, y: 0 }}
         className="bg-white/10 backdrop-blur-md rounded-xl p-8 border border-white/20 shadow-2xl max-w-md w-full"
       >
+        {/* Error message display */}
+        {error && <p className="text-red-300 text-sm mb-4 text-center">{error}</p>}
+        
         {/* Conditional rendering of login/signup forms */}
         {isLogin ? (
           <LoginForm 
@@ -33,9 +36,6 @@ export default function LoginPage() {
             onError={setError}
           />
         )}
-        
-        {/* Error message display */}
-        {error && <p className="text-red-300 text-sm mb-4">{error}</p>}
       </motion.div>
     </div>
   )
