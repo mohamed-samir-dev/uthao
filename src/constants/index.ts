@@ -20,6 +20,7 @@ export const ROUTES = {
   HOME: "/",
   Services: "#services",
   Process: "#process",
+  Benefits: "#benefits",
   Career: "#career",
   Stories: "#stories",
   LOGIN: "/login",
