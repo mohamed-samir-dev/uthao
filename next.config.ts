@@ -17,6 +17,13 @@ const nextConfig: NextConfig = {
     webpackBuildWorker: true,
   },
   
+  // Modularize imports for tree-shaking
+  modularizeImports: {
+    'lucide-react': {
+      transform: 'lucide-react/dist/esm/icons/{{kebabCase member}}',
+    },
+  },
+  
   // Compiler optimizations
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
