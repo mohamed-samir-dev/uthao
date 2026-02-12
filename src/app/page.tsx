@@ -8,6 +8,7 @@ import Steps from "@/components/Steps";
 import Stories from "@/components/Stories";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import { ScrollToTop } from "@/components/ui/ScrollToTop";
 // SEO metadata for home page
 export const metadata: Metadata = {
   title: "Global Ocean Logistics & Shipping Solutions | Uthao",
@@ -56,26 +57,18 @@ export default function Home() {
         }}
       />
       <div className="space-y-8">
-        {/* Main content section with centered layout */}
         <section className="text-center space-y-4">
-          {/* Optimized navigation header */}
           <OptimizedHeader />
-          {/* Partner logos section */}
           <Partner />
-          {/* Services showcase */}
-          <Services />
-          {/* <StepsPage /> */}
-          <Steps />
-          {/* <BenefitsPage /> */}
-          <Benefits />
-          {/* <StoriesPage /> */}
-          <Stories />
-          {/* <FAQPage /> */}
+          <div id="services"><Services /></div>
+          <div id="process"><Steps /></div>
+          <div id="career"><Benefits /></div>
+          <div id="stories"><Stories /></div>
           <FAQ />
-          {/* <FooterPage /> */}
           <Footer />
         </section>
       </div>
+      <ScrollToTop />
     </>
   );
 }

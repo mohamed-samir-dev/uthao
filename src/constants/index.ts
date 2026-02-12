@@ -18,10 +18,10 @@ export const API_ROUTES = {
 // Application page routes
 export const ROUTES = {
   HOME: "/",
-  Services: "/page/services",
-  Process: "/page/Steps",
-  Stories: "/page/Stories",
-  Career: "/page/career",
+  Services: "#services",
+  Steps: "#process",
+  Benefits: "#career",
+  Stories: "#stories",
   LOGIN: "/login",
   login: "/login", 
   REGISTER: "/login",

@@ -14,9 +14,9 @@ export function MenuPanel({ isMenuOpen, onClose }: MenuPanelProps) {
   const menuItems = [
     { href: ROUTES.HOME, label: 'Home' },
     { href: ROUTES.Services, label: 'Services' },
-    { href: ROUTES.Process, label: 'Process' },
-    { href: ROUTES.Stories, label: 'Stories' },
-    { href: ROUTES.Career, label: 'Career' }
+    { href: ROUTES.Steps, label: 'Steps' },
+    { href: ROUTES.Benefits, label: 'Benefits' },
+    { href: ROUTES.Stories, label: 'Stories' }
   ];
 
   return (
