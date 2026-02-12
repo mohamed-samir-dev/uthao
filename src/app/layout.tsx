@@ -90,8 +90,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        {/* Preload critical hero image */}
-        <link rel="preload" as="image" href="/1.webp" fetchPriority="high" />
+        {/* Preconnect to optimize font loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Preload critical hero image with responsive sizes */}
+        <link rel="preload" as="image" href="/1.webp" fetchPriority="high" imageSrcSet="/1.webp 1920w" imageSizes="100vw" />
         <link rel="icon" href="/android-chrome-192x192.png" sizes="any" />
         <link
           rel="icon"
